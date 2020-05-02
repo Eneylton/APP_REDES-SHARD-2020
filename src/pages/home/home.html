@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-fab top right edge>
+    <button color="danger" ion-fab mini (click)="compartilharImagem()">
+      <ion-icon name="md-checkmark"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <img src="../../assets/imgs/empresa.jpg">
+
+
+  <button ion-button small round icon-left outline mode="ios" color="saveBtn" (click)="saveImg(img)">
+    <ion-icon name="download"></ion-icon>
+    <b>Salvar</b>
+  </button>
+
+
+</ion-content>
